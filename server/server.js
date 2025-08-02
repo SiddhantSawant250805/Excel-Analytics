@@ -28,7 +28,7 @@ const limiter = rateLimit({
 app.use(helmet());
 app.use(limiter);
 app.use(cors({
-  origin: ['excelanalytics123.netlify.app', 'https://excel-analytics-1-4y0b.onrender.com'],
+  origin: ['https://excelanalytics123.netlify.app', 'https://excel-analytics-1-4y0b.onrender.com'],
   credentials: true
 }));
 app.use(express.json({ limit: '50mb' }));
